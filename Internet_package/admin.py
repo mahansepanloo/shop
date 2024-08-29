@@ -1,3 +1,5 @@
 from django.contrib import admin
-
-# Register your models here.
+from .models import internet
+@admin.register(internet)
+class internetAdmin(admin.ModelAdmin):
+    pass
